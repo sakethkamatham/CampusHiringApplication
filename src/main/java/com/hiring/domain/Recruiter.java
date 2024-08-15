@@ -23,6 +23,7 @@ public class Recruiter {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "dbky")
 	private Long id;
 	
 	@Column(nullable = false,name = "recruiter_name")

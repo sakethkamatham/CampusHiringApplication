@@ -28,6 +28,7 @@ public class Notes {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "dbky")
     private Long id;
 
     @Column(nullable = false, length = 500)

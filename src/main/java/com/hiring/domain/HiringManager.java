@@ -22,6 +22,7 @@ import lombok.NoArgsConstructor;
 public class HiringManager {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "dbky")
 	private Long id;
 	
 	@Column(nullable = false,name = "hiring_manager_name")
