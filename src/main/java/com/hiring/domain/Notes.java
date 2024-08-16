@@ -31,11 +31,11 @@ public class Notes {
 	@Column(name = "dbky")
     private Long id;
 
-    @Column(nullable = false, length = 500)
+    @Column(nullable = false, length = 500,name = "content")
     private String content;
 
-    @Column(nullable = false)
-    private LocalDateTime timestamp;
+    @Column(nullable = false,name = "comment_time")
+    private LocalDateTime comment_time;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "candidate_id", nullable = false)
