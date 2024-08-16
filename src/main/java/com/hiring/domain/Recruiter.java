@@ -9,13 +9,11 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Data
 @Table(name = "recruiter")
-@EqualsAndHashCode(callSuper = true)
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -29,7 +27,7 @@ public class Recruiter {
 	@Column(nullable = false,name = "recruiter_name")
 	private String name;
 	
-	@Column(nullable = false,name = "recruiter_name_email")
+	@Column(nullable = false,name = "recruiter_email")
 	private String email;
 
 }
